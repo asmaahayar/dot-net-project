@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aOS0dg//jeI8ewaX4dmtf844Ujcx+DGyuNyUF27cuN0em9xv5g6IPtqQaI2os71w2qI0Fu79BHlqOu7tsDyAAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lenovo\\Desktop\\Asmae-dotnet-project\\WebApplication1\\WebFrontend\\WebFrontend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lenovo\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

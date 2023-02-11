@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WebFrontend.Models.CosmeticDto>
+<div class="text-center">
+    <h1 class="p-2 text-danger">Our Products</h1>
+    <a class="btn btn-danger" href="@Url.Action("AddProduct", "Cosmetic")" >Add Product</a>
+</div>
+
+<div class="row">
+     @foreach (var item in Model)
+                            {
+                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid border rounded" src="@Url.Content(item.image)" alt="" style="width: 150px; height: 150px;">
+                                <div class="text-start ps-4">
+                                        <h5 class="mb-3">@item.name</h5>
+                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>@item.brand</span>
+                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>@item.price MAD</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                <div class="d-flex mb-3">
+                                    <a class="btn btn-outline-danger" href="@Url.Action("ProductDetails", "Cosmetic", new { id = item.id})" >Details</a>
+                                </div>
+                                <p class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>@item.description</p>
+                                
+                            </div>
+                            }
+</div>
+

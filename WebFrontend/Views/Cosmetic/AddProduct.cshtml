@@ -1,0 +1,52 @@
+﻿@model WebFrontend.Models.CosmeticDto
+<h1 class="text-center mb-5 wow fadeInUp text-danger" data-wow-delay="0.1s">Create New Product</h1>
+
+<div class="row g-4">
+    <div class="col-md-12">
+        <div class="wow fadeInUp" data-wow-delay="0.5s">
+            <form asp-action="AddProduct">
+                <div class="row g-3">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="text" asp-for="id" class="form-control" id="id" placeholder="id">
+                            <label for="id">Product ref</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="text" asp-for="name" class="form-control" id="name" placeholder="name">
+                            <label for="name">Product name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="text" asp-for="brand" class="form-control" id="brand" placeholder="brand">
+                            <label for="brand">Product brand</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="number" asp-for="price" class="form-control" id="price" placeholder="price">
+                            <label for="price">Product price</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="text" asp-for="image" class="form-control" id="image" placeholder="image">
+                            <label for="price">Product Image</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="">
+                            <textarea type="text" asp-for="description" class="form-control" id="description" placeholder="description" rows="4" cols="50"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-danger w-100 py-3" type="submit">Create</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
